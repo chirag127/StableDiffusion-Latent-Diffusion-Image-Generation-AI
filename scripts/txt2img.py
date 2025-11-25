@@ -41,9 +41,7 @@ def numpy_to_pil(images):
     if images.ndim == 3:
         images = images[None, ...]
     images = (images * 255).round().astype("uint8")
-    pil_images = [Image.fromarray(image) for image in images]
-
-    return pil_images
+    return [Image.fromarray(image) for image in images]
 
 
 def load_model_from_config(config, ckpt, verbose=False):
