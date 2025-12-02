@@ -1,0 +1,52 @@
+# badges.yml
+# Configuration file for generating dynamic badges based on Apex Standards (chirag127/StableDiffusion-Latent-Diffusion-Image-Generation-AI)
+
+badges:
+  - name: Build Status
+    type: github-actions
+    repo: StableDiffusion-Latent-Diffusion-Image-Generation-AI
+    user: chirag127
+    workflow: CI/CD
+    label: Build
+    color: blue
+    style: flat-square
+
+  - name: Code Coverage
+    type: codecov
+    repo: chirag127/StableDiffusion-Latent-Diffusion-Image-Generation-AI
+    token: ${{ secrets.CODECOV_TOKEN }}
+    label: coverage
+    style: flat-square
+
+  - name: Python Version
+    type: badge
+    label: Python
+    message: 3.10+
+    color: blue
+    style: flat-square
+
+  - name: Framework
+    type: badge
+    label: Model
+    message: Latent Diffusion
+    color: success
+    style: flat-square
+
+  - name: License
+    type: license
+    repo: chirag127/StableDiffusion-Latent-Diffusion-Image-Generation-AI
+    color: success
+    style: flat-square
+
+  - name: GitHub Stars
+    type: star
+    repo: chirag127/StableDiffusion-Latent-Diffusion-Image-Generation-AI
+    color: yellow
+    style: flat-square
+
+  - name: Language
+    type: badge
+    label: Language
+    message: Jupyter Notebook
+    color: lightgray
+    style: flat-square
